@@ -1,0 +1,368 @@
+﻿/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+
+@media only screen and (min-width:1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width:2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width:480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+@media only screen and (device-width:768px) {
+    /* default iPad screens */
+    .rec{
+        margin-right:0px !important;
+    }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color:lightgoldenrodyellow !important;
+        /*background-repeat: no-repeat;
+        background-size: cover;*/
+    }
+    .navbar-nav > li > a {
+        font-size: 10px !important;
+        padding: 5px 5px !important;
+        line-height: 14px !important;
+        background: initial !important;
+    }
+    .container {
+        width: 820px !important;
+    }
+}
+@media only screen and (min-width:993px) {
+    .navbar-nav > li > a {
+        font-size: 12px !important;
+        padding: 5px 15px !important;
+        line-height: 14px !important;
+        background: initial !important;
+    }
+
+    .navbar-right {
+        margin-right:0px;
+        height: 37px !important;
+
+    }
+}
+@media only screen and (min-width:1200px) {
+    .navbar-nav > li > a {
+        font-size: 12px !important;
+        padding: 7px 25px 7px 1px !important;
+        line-height: 14px !important;
+        background: initial !important;
+    }
+
+    .navbar-right {
+        margin-right: 0px;
+        height: 30px !important;
+    }
+     .container {
+        width: 1110px !important;
+    }
+}
+@media screen and (max-width: 300px) {
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 14px !important;
+        background: #863f95 !important;
+    }
+}
+.article {
+    background-color: #fff !important;
+    border-right: 1px dotted #aa82d5;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #863f95 !important;
+    background-color: #aa82d5 !important;
+}
+.navbar-collapse{
+    padding:0px !important;
+}
+.liMenu {
+    width: 100%;
+}
+#CPHBody_pnlImages div {
+    max-height: 400px !important;
+    max-width: 400px !important;
+}
+.tz-gallery .row img {
+    /*height: 90px !important;
+    width: 90px !important;*/
+}
+body {
+    font-family:'Open Sans Condensed' !important;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background: #863f95 !important;
+}
+.menuoutlet {
+    margin-left: -1% !important;
+    width: 102% !important;
+}
+a.submenu.dropdown-toggle {
+    padding: 10px !important;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+background:initial !important;
+}
+.container {
+    background-color: white;
+    padding: 0px !important;
+}
+.article-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+.article-content {
+    font-size: 18px;
+    
+}
+.container.article{
+    padding:4% !important;
+}
+.menubarbtn {
+    color: white;
+    /*padding-right: 0px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px;
+    color: white;*/
+}
+.navbar{
+    min-height:initial !important;
+}
+.navbar-nav > li > a {
+    color: white !important;
+    font-size:10px;
+}
+.dropdown-menu > li > a {
+    color: white !important;
+}
+.dropdown-menu {
+    background: #aa82d5 !important;
+}
+
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: #eee;
+    border-color: #337ab7;
+}
+    .menubarbtn :hover {
+        background-color: none !important;
+    }
+.collapse.in {
+    display: contents !important;
+}
+.top-menu {
+    height: 37px;
+    border-radius:initial !important;
+    background: #aa82d5 url(../img/recruit_tag.png) no-repeat;
+    background-position-x: right;
+    background-position-y:top;
+}
+.ocrimg{
+    width:90%;
+}
+address {
+ 
+    height:150px;
+    font-size:16px;
+    margin-bottom:5px !important;;
+    color: #863f95 !important;
+}
+a.dropdown-toggle {
+    color: white !important;
+}
+.row.adddetails {
+    padding:5px;
+    margin: 5px;
+    background: white;
+    border-radius: 5px;
+    color: black;
+}
+.darkpurple {
+    background: #863f95;
+    color: white !important;
+}
+.lightcolpurple {
+    background: #aa82d5
+}
+.lightpurple {
+    background: #aa82d5 url(../img/recruit_tag.png) no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+.copyright {
+    color:white;
+    font-size: 9px;
+}
+button.navbar-toggle {
+   
+    margin: 3px 5px !important;
+    padding:5px 10px !important;
+}
+.navbar-brand{
+    padding: 8px 10px !important;
+    color:white !important;
+    font-weight:bold;
+    min-height:initial !important;
+    height:initial !important;
+}
+.icon-bar {
+    background-color: #aa82d5 !important;
+    width:35px !important;
+}
+.bottom-menu {
+    height: 37px;
+    background-color: #863F95;
+}
+.masthead {
+    height: 110px;
+    background: #ffffff url(../img/recruit_tag_t.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.navbar{
+    border-radius:initial !important;
+    border:none !important;
+    margin-bottom:0px !important;
+}
+.top-links-container {
+    width: 200px;
+    margin: 10px 0px;
+    float: right;
+  
+}
+.mainleveltop {
+    color: #863f95 !important;
+    font-weight: bold;
+}
+.dropbtn {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+.container-fluid{
+    padding:0px !important;
+}
+a.menubarbtn {
+    color: white;
+    margin: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .menubarbtn:hover {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img{
+    width:100%;
+}
+
+a.footerlink {
+    color: white;
+    text-decoration: underline;
+}
+.footerlinkheader{
+    color:white;
+    font-weight:bold;
+}
+
+.footer.row.justify-content-center {
+    padding: 8px;
+}
+.content-textholder {
+    padding: 0px;
+}
+ul.nav.navbar-nav.navbar-right {
+    width: 100%;
+
+}
+.info {
+    margin: 5px;
+    color: black;
+    font-size: 16px;
+}
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.img-fluid {
+    height: 100px;
+    width: 100px;
+}
+
+.timeline-image {
+    display: block;
+    /* padding: 5px; */
+    float: left !important;
+    /* position: absolute; */
+    z-index: 100;
+    left: 0;
+    width: 122px;
+    height: 122px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    background-color: #aa82d5;
+}

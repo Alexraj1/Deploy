@@ -1,0 +1,361 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Roshmi Beauté Indienne à Paris et Villeneuve-Saint-Georges</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Resources/css/index.css?v=115" />
+            <link href="Resources/css/global.styles.css" rel="stylesheet" />   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+        <link rel="stylesheet" href="Resources/css/gallery-grid.css" />
+    <script>
+        function ShowHide(ele) {
+            $("#CPHBody_pnlImages div").hide("fast");
+            $("#CPHBody_pnlImages " + ele).show("slow");
+        }
+    </script>
+    <style>
+        #pills-tab{
+        width: fit-content;
+    margin: auto;
+    }
+    </style>
+    <asp:ContentPlaceHolder ID="CPHHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMaster" runat="server">
+
+        <div class="container">
+            <div class="masthead">
+                <div class="text-muted">
+                    <div class="logo" style="width: 130px; float: left">
+                       <a href="Default.aspx"> <img src="Resources/img/logo.png" alt="Roshmi Logo" style="height: 100px" /></a>
+                    </div>
+                    <div class="top-links-container">
+                       <a href="Default.aspx" class="mainleveltop">Accueil</a>
+                        <span class="mainleveltop">| </span>
+                        <a href="NosCentresVSG.aspx#Contact" class="mainleveltop">Acces</a>
+                        <span class="mainleveltop">| </span><a  href="Sitemap.aspx" class="mainleveltop">Plan du Site</a>
+
+
+                        <div class="itp-socialbuttons-mod">
+                            <div class="itp-sbb-nl">
+                                <div class="itp-sb-right">
+                                    <!-- facebbok link starts-->
+                                    <div class="fbShare" style="margin: 10px 0px">
+                                        <div id="fb-root"></div>
+                                        <script>(function (d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s); js.id = id;
+                                                js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.1';
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));</script>
+
+                                        <div class="fb-like" data-href="https://www.facebook.com/beauteindienne/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                                    </div>
+                                    <!-- facebbok link ends-->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="jflanguageselection" style="display:none">
+                            <div>
+                                <span>
+                                    <asp:HyperLink ID="hypLangFr" runat="server">    <img src="Resources/img/fr.gif" alt="Français (FR)" title="Français (FR)"></asp:HyperLink>
+                                </span>
+                                <span>
+                                    <asp:HyperLink ID="HyperLink1" runat="server">   
+                                                <img src="Resources/img/en.gif" alt="Anglais (UK)" title="Anglais (UK)"></asp:HyperLink>
+
+                                </span>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <nav class="navbar navbar lightpurple">
+                <div class="container-fluid">
+                    <div class="navbar-header hidden-lg hidden-md hidden-sm">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                           <ul class="nav navbar-nav navbar-right">
+                                       <li  class="rec pull-right" style="width: 110px;margin-right:0px;"><a href="Recrutement.aspx">RECRUTEMENT</a></li>
+                           <li class="pull-right"><a href="Pressbook.aspx">PRESSBOOK</a></li>
+                            <li class="pull-right"><a href="Gallerie.aspx">GALERIE</a></li>
+                       <li class="pull-right"><a href="Promo.aspx">PROMO</a></li>
+                     
+                            <li class="pull-right"><a href="Tarif.aspx">TARIFS</a></li>
+                            <li class="dropdown pull-right">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">NOS CENTRES<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="NosCentresVSG.aspx#VSG">VILLENEUVE ST GEORGES</a> </li>
+                                    <li class="liMenu"><a href="NosCentresVSG.aspx#PARIS">PARIS</a> </li>
+
+                                </ul>
+                            </li>
+
+
+
+                        
+                         
+             
+                        </ul>
+                        <ul class="nav navbar-nav darkpurple menuoutlet justify-content-center">
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">ÉPILATION AU FIL</a>
+                                <ul class="dropdown-menu">
+
+                                    <li class="liMenu"><a href="EpilationAuFil.aspx">Sourcils au fil</a> </li>
+                                    <li class="liMenu"><a href="CreationSourcils.aspx">Création Sourcils</a> </li>
+                                    <li class="liMenu"><a href="MentonAuFil.aspx">Menton au fil</a> </li>
+                                    <li class="liMenu"><a href="LevreAuFil.aspx">Lèvre au fil</a> </li>
+                                    <li class="liMenu"><a href="CouAuFil.aspx">Cou au fil</a> </li>
+                                    <li class="liMenu"><a href="EpilationDeVisageComplet.aspx">Épilation de visage complet </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">LA CIRE CHAUDE</a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="EpilationAisselles.aspx">Épilation aisselles </a></li>
+                                    <li class="liMenu"><a href="EpilationJambesEntieres.aspx">Épilation jambes entières </a></li>
+                                    <li class="liMenu"><a href="EpilationDemiJambes.aspx">Épilation demi jambes </a></li>
+                                    <li class="liMenu"><a href="EpilationBrasEntieres.aspx">Épilation bras entières </a></li>
+                                    <li class="liMenu"><a href="EpilationDuMaillotSimple.aspx">Épilation du maillot simple </a></li>
+                                    <li class="liMenu"><a href="EpilationDuDos.aspx">Épilation du dos  </a></li>
+                                    <li class="liMenu"><a href="ForfaitEpilationComplete.aspx">Forfait épilation compléte </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">SOINS DU VISAGE</a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="SoinsSimple.aspx">Ayurvédique Soins simple(35min)</a> </li>
+                                    <li class="liMenu"><a href="SoinsComplet.aspx">Ayurvédique Soins Complet(60min)</a> </li>
+                                    <li class="liMenu"><a href="SoinsSpecial.aspx">Soins special(60min)</a> </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">BLANCHIMENT</a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="BlanchimentDuVisage.aspx">Blanchiment du visage</a> </li>
+                                    <li class="liMenu"><a href="BlanchimentDuCou.aspx">Blanchiment du cou</a> </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">RELAXATION</a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="MassageAlHuile.aspx">Massage à l'huile</a> </li>
+                                    <li class="liMenu"><a href="MassageAvecMasque.aspx">Massage avec masque</a> </li>
+                                    <li class="liMenu"><a href="MassageRelaxation.aspx">Ayurvédique Massage Relaxation</a> </li>
+                                    <li class="liMenu"><a href="Panchakarma.aspx">Panchakarma (1h)</a> </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">MEHENDI/MAQUILLAGE</a>
+                                <ul class="dropdown-menu">
+                                    <li class="liMenu"><a href="Colorations.aspx">Colorations</a> </li>
+                                    <li class="liMenu"><a href="HenneIndienEtArabs.aspx">Henné dessins Indien et Arabs </a></li>
+                                    <li class="liMenu"><a href="HenneMariage.aspx">Henné Mariage </a></li>
+                                    <li class="liMenu"><a href="MaquillageMarieeSurPlace.aspx">Maquillage marieé sur place </a></li>
+                                    <li class="liMenu"><a href="MaquillageMarieeADomicile.aspx">Maquillage mariée à domicile </a></li>
+                                    <li class="liMenu"><a href="MaquillageDeJour.aspx">Maquillage de jour </a></li>
+                                    <li class="liMenu"><a href="MaquillageDeSoir.aspx">Maquillage de soir </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="submenu dropdown-toggle" data-toggle="dropdown" href="#">BEAUTÉ DES MAINS/PIEDS</a>
+                                <ul class="dropdown-menu">
+
+                                    <li class="liMenu"><a href="BlanchimentDesBras.aspx">Blanchiment des bras</a> </li>
+                                    <li class="liMenu"><a href="PoseVernis.aspx">Pose vernis </a></li>
+                                    <li class="liMenu"><a href="FrenchManucure.aspx">French manucure </a></li>
+                                    <li class="liMenu"><a href="ManucureSimple.aspx">Manucure simple </a></li>
+                                    <li class="liMenu"><a href="ManucureComplete.aspx">Manucure compléte </a></li>
+                                   <%-- <li class="liMenu"><a href="ManucureAvecParafine.aspx">Manucure avec parafine </a></li>--%>
+                                    <li class="liMenu"><a href="BeauteCompleteDesPieds.aspx">Beauté compléte des pieds</a> </li>
+                                    <li class="liMenu"><a href="PedicureAvecParafine.aspx">Pedicure avec parafine</a> </li>
+                                    <li class="liMenu"><a href="PoseDeFauxOnglesResine.aspx">Pose De Faux Ongles Résine</a> </li>
+                                    <li class="liMenu"><a href="PoseDeFauxOnglesGel.aspx">Pose De Faux Ongles Gel</a> </li>
+                                    <li class="liMenu"><a href="VerniPermanent.aspx">Verni Permanent</a> </li>
+
+                                </ul>
+                            </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="content-holder">
+
+            <asp:ContentPlaceHolder ID="CPHBody" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="container lightcolpurple">
+                        <div class="footer row  justify-content-center top">
+                
+                            <div class="pull-left col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                <div class="foot1">
+                             <%--       <div class="pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                       <div class="footerlinkheader">SERVICES</div> 
+                                    </div>--%>
+                                    <div class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <a class="footerlink"  href="EpilationAuFil.aspx">ÉPILATION AU FIL</a><br />
+                                        <a class="footerlink"  href="SoinsSpecial.aspx">SOINS DU VISAGE</a><br />
+                                        <a class="footerlink"  href="BlanchimentDuVisage.aspx">BLANCHIMENT</a><br />
+                                    </div>
+                                    <div class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <a class="footerlink" href="EpilationBrasEntieres.aspx">LA CIRE CHAUDE</a><br />
+                                        <a class="footerlink" href="MassageRelaxation.aspx">RELAXATION</a><br />
+                                        <a class="footerlink" href="HenneIndienEtArabs.aspx">MEHENDI/MAQUILLAGE</a><br />
+                                       </div>
+                                         <div class="pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                          <a class="footerlink"  href="BeauteCompleteDesPieds.aspx">BEAUTÉ DES MAINS/PIEDS</a><br />
+                               
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                              
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="row adddetails">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+                                        <address class="Addesse vsg">
+
+                                            <strong>Roshmi Beauté Indienne</strong>
+                                            <div>47 Rue Henri Janin, </div>
+                                            <div>94190 Villeneuve-St-Georges</div>
+                                            <div>Tél: 01 43 89 84 48</div>
+                                        </address>
+                                    </div>
+                                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
+                                        <img src="Resources/img/ocr/vsg.png" class="ocrimg" alt="01 43 89 84 48" />
+                                    </div>
+                                            </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row adddetails">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-8">
+                                        <address class="Addesse paris">
+                                            <strong>Roshmi Beauté Indienne</strong>
+                                            <div>10 Rue Des Portes Blanches,</div>
+                                            <div>75018 Paris</div>
+                                            <div>Tél: 01 42 52 33 92</div>
+
+                                        </address>
+                                    </div>
+                                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
+                                        <img src="Resources/img/ocr/paris.png" class="ocrimg" alt="01 42 52 33 92" />
+                                    </div>
+
+
+                                    </div>
+
+                                </div>
+                                 
+                            </div>
+
+                             <div class="pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="Tarif.aspx">TARIFS</a><br />
+                                    </div>
+                                    <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="Gallerie.aspx">GALERIE</a><br />
+                                    </div>
+                                    <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="Pressbook.aspx">PRESSBOOK</a><br />
+                                    </div>
+                                    <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="Recrutement.aspx">RECRUTEMENT</a><br />
+                                    </div>
+                                            <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="Sitemap.aspx">PLAN DU SITE</a><br />
+                                    </div>
+                                              <div class="pull-left col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                                        <a class="footerlink"  href="NosCentresVSG.aspx#Contact">ACCES</a><br />
+
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="copyright container darkpurple">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="container darkpurple">
+                    <div class="footer row  justify-content-center">
+                        <div class="pull-left col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <asp:Label ID="lblyear" runat="server" Text="2018"></asp:Label>
+                            © Indian Beauty. Tous Droits Réservés.
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div style="text-align: center">
+                                <a class="footerlink" href="Condition.aspx">Mention légale</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="footerlink pull-right">
+                                Site créé par <a href="http://primaryduty.com/" target="_blank">www.primaryduty.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
